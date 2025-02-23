@@ -1,0 +1,704 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    position: relative;
+}
+
+.background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+/* Header */
+.header {
+    display: flex;
+    padding: 1.5vw;
+    padding-left: 9vw;
+    font-weight: 700;
+}
+
+.header-logo {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #585858;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-logo-orange {
+    color: #FB9333;
+}
+
+.header-nav {
+    display: flex;
+    padding-left: 23%;
+    align-items: center;
+    gap: 4vw;
+}
+
+.header-link {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #575757;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.header-link:hover {
+    color: #FB9300;
+}
+
+.header-link-active {
+    font-size: larger;
+    font-weight: 700;
+    color: #FB9300;
+}
+
+.sign-btn {
+    background-color: #FB9333;
+    border: none;
+    padding: 1.2rem 3.5rem;
+    border-radius: 2rem;
+    color: white;
+    font-weight: 550;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.button-wrapper {
+    display: flex;
+    align-items: center;
+    padding-left: 21%;
+}
+
+.start{
+    position: relative;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9vw;
+    padding-top: 3.3vw;
+    padding-right: 0;
+    flex-wrap: wrap;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-subheader {
+    background-color: #FFF0DC;
+    color: #FB9333;
+    padding: 1rem 1.3rem;
+    border-radius: 2rem;
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.banner-header {
+    font-size: 5.3rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0;
+    padding-top: 1%;
+    color: #575757;
+}
+
+.banner-header-orange {
+    color: #FB9333;
+}
+
+.banner-text {
+    max-width: 80%;
+    font-size: 1.5rem;
+    color: #828282;
+    padding-top: 2%;
+    font-weight: 500;
+}
+
+.banner-order-btn {
+    background-color: #FB9333;
+    border: none;
+    padding: 1.7rem 4rem;
+    border-radius: 4rem;
+    color: white;
+    font-weight: 600;
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin-bottom: 2vw;
+}
+
+.banner-info {
+    max-width: 50%;
+    display: flex;
+    gap: 3.7vw;
+    font-weight: 500;
+    color: #828282;
+    margin-top: 3.2vw;
+    font-size: 1.3rem;
+}
+
+.banner-info b{
+    color: #575757;
+    font-size: 1.7rem;
+}
+
+.banner-img {
+    height: auto;
+    object-fit: contain;
+}
+
+.banner-reviews {
+    position: absolute;
+    top: 72%;
+    left: 52%;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    background: white;
+    padding: 0.5vw;
+    padding-right: 1.5vw;
+    border-radius: 4vw;
+    box-shadow: 0 0.4vw 1vw rgba(0,0,0,0.1);
+    width: fit-content;
+    margin-top: 2vw;
+    z-index: 2;
+}
+
+.banner-happy-img {
+    width: 4.5vw;
+}
+
+.banner-reviews-content {
+    display: flex;
+    flex-direction: column;
+}
+.banner-happy-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #575757;
+    margin: 0;
+}
+
+.banner-reviews-bottom {
+    margin-top: 0.3vw;
+    display: flex;
+    align-items: center;
+    gap: 0.3vw;
+}
+
+.banner-reviews-text {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #575757;
+    margin: 0;
+}
+
+.banner-reviews-text b{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #828282;
+    margin: 0;
+}
+
+.banner-calories {
+    position: absolute;
+    top: 73%;
+    left: 84%;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 1.7vw;
+    padding-top: 1.2vw;
+    border-radius: 2vw;
+    box-shadow: 0 0.4vw 1vw rgba(0,0,0,0.1);
+    width: fit-content;
+    z-index: 2;
+}
+
+.banner-calories-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #575757;
+    margin: 0;
+}
+
+.banner-calories-num {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #575757;
+    margin: 0;
+}
+
+.banner-calories-num b{
+    color: #2B2B2B;
+}
+
+.banner-calories-progress-container {
+    display: flex;
+    gap: 0.4vw;
+    flex-direction: column;
+    transform: rotate(-90deg);
+}
+
+.banner-calories-progress {
+    height: 0.8vw;
+    width: 6vw;
+    margin: 1;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 1rem;
+}
+
+.banner-calories-progress::-webkit-progress-bar {
+  background: #F5F5F5;
+  border-radius: 1rem;
+}
+
+.banner-calories-progress::-webkit-progress-value {
+  background: linear-gradient(to right, #FB9333, #FFD7A0);
+  border-radius: 1rem;
+}
+
+.banner-calories-progress::-moz-progress-bar {
+  background: linear-gradient(to right, #FB9333, #FFD7A0);
+  border-radius: 1rem;
+}
+
+.quality-header-container {
+    padding-top: 10vw;
+    display: flex;
+}
+
+.quality-header {
+    max-width: 55%;
+    font-size: 3.3rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 0;
+    color: #585858;
+}
+
+.quality-header-orange {
+    color: #FB9333;
+    font-weight: 600;
+}
+
+.quality-text {
+    max-width: 40%;
+    font-size: 1.4rem;
+    color: #828282;
+    margin: 0;
+    padding-top: 1.5vw;
+    padding-left: 7.5vw;
+    font-weight: 500;
+}
+
+.quality-container {
+    margin-top: 4vw;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10vw;
+    flex-wrap: wrap;
+}
+
+.quality-block {
+    background: #fff;
+    border-radius: 3vw;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 26%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.quality-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px #FFD7A0;
+}
+
+.quality-img {
+    margin-bottom: 2vw;
+}
+
+.quality-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2B2B2B;
+    margin-bottom: 1.5vw;
+}
+
+.quality-description {
+    font-size: 1.1rem;
+    color: #575757;
+    line-height: 1.6;
+    margin-bottom: 2vw;
+}
+
+.quality-link {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #F4A637;
+    padding: 0.625em 1.25em;
+    border: 0.125em solid transparent;
+    border-radius: 3.125em;
+    transition: all 0.3s ease-in-out;
+}
+
+.quality-link:hover {
+    color: #fff;
+    background-color: #F4A637;
+    border-color: #F4A637;
+}
+
+
+
+
+
+.reviews {
+    margin-top: 6vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 1.2rem;
+    background-color: #FEF4E8;
+    
+}
+
+.reviews > div:first-child {
+    max-width: 25rem;
+}
+
+.reviews-header {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.reviews-header-orange {
+    color: #F4A637;
+}
+
+.reviews-text {
+    font-size: 1rem;
+    color: #666;
+    margin: 0.6rem 0 1.8rem;
+}
+
+.reviews-amount-num {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.reviews-amount-num-bold {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.reviews-left, .reviews-right {
+    background-color: transparent;
+    border: 0.12rem solid #F4A637;
+    color: #F4A637;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.6rem 0.9rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-right: 0.6rem;
+}
+
+.reviews-left:hover, .reviews-right:hover {
+    background-color: #F4A637;
+    color: #fff;
+}
+
+.reviews-container {
+    display: flex;
+    gap: 1.2rem;
+    overflow-x: auto;
+    padding-bottom: 0.6rem;
+}
+
+.reviews-block {
+    background: #fff;
+    border-radius: 1.2rem;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 0.6rem 1.8rem rgba(0, 0, 0, 0.1);
+    width: 15rem;
+    min-width: 15rem;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    overflow: visible;
+}
+
+.reviews-block:hover {
+    transform: translateY(-0.3rem);
+}
+
+.reviews-block-img {
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    position: absolute;
+    top: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.reviews-block-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #333;
+    margin-top: 2.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.reviews-block-age {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 0.9rem;
+}
+
+.reviews-block-text {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+
+
+.menu {
+    text-align: center;
+    padding: 4vw 2vw;
+}
+
+.menu-subheader {
+    color: #E98932;
+    font-size: 1.5vw;
+    font-weight: 600;
+    margin-bottom: 1vw;
+}
+
+.menu-header {
+    font-size: 2.5vw;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 3vw;
+}
+
+.menu-header-orange {
+    color: #E98932;
+}
+
+.menu-block {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.menu-block-option {
+    background: #F8F8F8;
+    padding: 2vw;
+    border-radius: 2vw;
+    text-align: center;
+    box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.1);
+    width: 20vw;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-block-option:hover {
+    transform: translateY(-0.5vw);
+}
+
+.menu-block-option-img {
+    width: 100%;
+    border-radius: 1vw;
+    margin-bottom: 1vw;
+}
+
+.menu-block-option-name {
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5vw;
+}
+
+.menu-block-option-price {
+    font-size: 1.8vw;
+    font-weight: 700;
+    color: #333;
+}
+
+
+
+.subscription {
+    text-align: center;
+    padding: 4vw 2vw;
+    background: #FFF4E6;
+    border-radius: 2vw;
+    position: relative;
+}
+
+.subscription-block {
+    position: relative;
+    display: inline-block;
+    padding: 3vw;
+    max-width: 50vw;
+}
+
+.subscription-block-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.2;
+    border-radius: 2vw;
+}
+
+.subscription-subheader {
+    color: #E98932;
+    font-size: 1.5vw;
+    font-weight: 600;
+    margin-bottom: 1vw;
+}
+
+.subscription-header {
+    font-size: 2.5vw;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1.5vw;
+}
+
+.subscription-text {
+    font-size: 1.2vw;
+    color: #666;
+    margin-bottom: 2vw;
+}
+
+.subscription-action {
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.subscribe-input-field {
+    padding: 1vw;
+    width: 25vw;
+    border: 0.1vw solid #CCC;
+    border-radius: 2vw;
+    font-size: 1vw;
+}
+
+.subscribe-btn {
+    background: #E98932;
+    color: white;
+    font-size: 1.2vw;
+    padding: 1vw 2vw;
+    border: none;
+    border-radius: 2vw;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.subscribe-btn:hover {
+    background: #d37729;
+}
+
+
+
+.salad-footer {
+    background: #fff;
+    padding: 3vw 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-block {
+    max-width: 25%;
+}
+
+.footer-logo {
+    font-size: 2vw;
+    font-weight: 700;
+    color: #575757;
+    margin-bottom: 1vw;
+}
+
+.footer-logo-orange {
+    color: #E98932;
+}
+
+.footer-block-text {
+    font-size: 1.2vw;
+    color: #575757;
+    margin-bottom: 1vw;
+}
+
+.footer-copyright {
+    font-size: 1vw;
+    color: #999;
+    text-decoration: none;
+}
+
+.footer-block-header {
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: #E98932;
+    margin-bottom: 1vw;
+}
+
+.footer-block-link {
+    display: block;
+    font-size: 1.2vw;
+    color: #575757;
+    text-decoration: none;
+    margin-bottom: 0.5vw;
+}
+
+.footer-info-img {
+    width: 1.5vw;
+    margin-right: 0.5vw;
+    vertical-align: middle;
+}
+
+.footer-info-text {
+    font-size: 1vw;
+    color: #333;
+    display: inline-block;
+    margin-bottom: 0.5vw;
+}
+
+.footer-social-link {
+    display: inline-block;
+    margin-right: 1vw;
+}
+
+
+.footer-social-text {
+    font-size: 1.2vw;
+    color: #575757;
+    margin-top: 0.5vw;
+}

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyle.css">
     <title>Document</title>
 </head>
 <body>
@@ -10,16 +11,19 @@
     <header class="header">
       <p class="header-logo"><b class="header-logo-orange">JEZ</b> SALAD</p>
       <nav class="header-nav">
-        <a class="header-link" href="#">Home</a>
+        <a class="header-link header-link-active" href="#">Home</a>
         <a class="header-link" href="#">Menu</a>
         <a class="header-link" href="#">Contact</a>
-        <a class="header-link" href="#">About us</a>
-        <button class="sign-btn">Sign</button>
+        <a class="header-link" href="#">About Us</a>
       </nav>
+      <div class="button-wrapper">
+        <button class="sign-btn">Sign</button>
+      </div>
     </header>
     <main class="main">
-        <section class="banner">
-            <div>
+        <section class="start">
+            <div class="banner">
+                <div>
                 <h3 class="banner-subheader">#1 Best Healthy Salad</h3>
                 <h1 class="banner-header">
                     <b class="banner-header-orange">Skip</b> The Diet, Just Eat Healthy With Jez Salad
@@ -30,34 +34,43 @@
                 </p>
                 <button class="banner-order-btn">Order Food</button>
                 <div class="banner-info">
-                    <p class="banner-customers"><b>5.000+</b> Customers</p>
-                    <p class="banner-delivery"><b>8.000+</b> Delivery</p>
-                    <p class="banner-ratings"><b>1.000+</b> Ratings</p>
+                    <p class="banner-customers"><b>5.000+</b><br> Customer</p>
+                    <p class="banner-delivery"><b>8.000+</b><br> Delivery</p>
+                    <p class="banner-ratings"><b>1.000+</b><br> Ratings</p>
+                </div>
                 </div>
                 <img class="banner-img" src="./icons/banner-woman.png" alt="Woman" />
-                <div class="banner-reviews">
-                    <img class="banner-happy-img" src="./icons/happy.png" alt="Happy emoji"/>
+            </div>
+            <div class="banner-reviews">
+                <img class="banner-happy-img" src="./icons/happy.png" alt="Happy emoji"/>
+                <div class="banner-reviews-content">
                     <p class="banner-happy-text">Our Happy Customer</p>
-                    <img class="banner-star-img" src="./icons/Star.png" alt="Star emoji"/>
-                    <p class="banner-reviews-text">4.9  <b>(1.989 Reviews)</b></p>
+                    <div class="banner-reviews-bottom">
+                        <img class="banner-star-img" src="./icons/Star.png" alt="Star emoji" />
+                        <p class="banner-reviews-text">4.9 <b>(1.989 Reviews)</b></p>
+                    </div>
                 </div>
-                <div class="banner-calories">
-                    <p class="banner-calories-text">Daily Calories</p>
-                    <p class="banner-calories-num">123 Cal</p>
-                    <progress class="banner-calories-progress" max="100" value="20">20%</progress>
-                    <progress class="banner-calories-progress" max="100" value="20">20%</progress>
-                    <progress class="banner-calories-progress" max="100" value="20">20%</progress>
-                    <progress class="banner-calories-progress" max="100" value="20">20%</progress>
-                    <progress class="banner-calories-progress" max="100" value="20">20%</progress>
-                    <progress class="banner-calories-progress" max="100" value="20">20%</progress>
-                    <progress class="banner-calories-progress" max="100" value="20">20%</progress>
-                    <progress class="banner-calories-progress" max="100" value="20">20%</progress>
+            </div>
+            <div class="banner-calories">
+                <p class="banner-calories-text">Daily Calories</p>
+                <p class="banner-calories-num"><b>123</b> Cal</p>
+                <div class="banner-calories-progress-container">
+                    <progress class="banner-calories-progress" max="100" value="40">40%</progress>
+                    <progress class="banner-calories-progress" max="100" value="60">60%</progress>
+                    <progress class="banner-calories-progress" max="100" value="70">70%</progress>
+                    <progress class="banner-calories-progress" max="100" value="65">65%</progress>
+                    <progress class="banner-calories-progress" max="100" value="60">60%</progress>
+                    <progress class="banner-calories-progress" max="100" value="77">77%</progress>
+                    <progress class="banner-calories-progress" max="100" value="83">83%</progress>
+                    <progress class="banner-calories-progress" max="100" value="88">88%</progress>
                 </div>
             </div>
         </section>
         <section class="quality">
-            <h2 class="quality-header">WHY CHOOSE US FOR <b class="quality-header-orange">YOUR HEALTHY FOOD</b></h2>
-            <p class="quality-text">We continue to consistently choose and maintain the quality of the fruit served, so that it remains fresh and nutritious when you eat it.</p>
+            <div class="quality-header-container">
+                <h2 class="quality-header">WHY CHOOSE US <br>FOR <b class="quality-header-orange">YOUR HEALTHY FOOD</b></h2>
+                <p class="quality-text">We continue to consistently choose and<br>maintain the quality of the fruit served, so that<br>it remains fresh and nutritious when you eat it.</p>
+            </div>
             <div class="quality-container">
               <article class="quality-block">
                 <img class="quality-img" src="./icons/quality-factory-img.png" alt="Factory" />
